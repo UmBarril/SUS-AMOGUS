@@ -1,0 +1,76 @@
+/* tudo */
+* { 
+    font-weight: bold;
+}
+
+@keyframes rainbow {
+    100%,0%{
+		color: rgb(255,0,0);
+	}
+	8%{
+		color: rgb(255,127,0);
+	}
+	33%{
+		color: rgb(0,255,0);
+	}
+	41%{
+		color: rgb(0,255,127);
+	}
+	50%{
+		color: rgb(0,255,255);
+	}
+	58%{
+		color: rgb(0,127,255);
+	}
+	66%{
+		color: rgb(0,0,255);
+	}
+	75%{
+		color: rgb(127,0,255);
+	}
+	83%{
+		color: rgb(255,0,255);
+	}
+	91%{
+		color: rgb(255,0,127);
+	}
+}
+.rainbow {
+    animation: rainbow 5s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes goofy_expand {
+    100%, 0% {font-size: 200px;}
+    50% {font-size: 50px;}
+}
+.goofy_expand {
+    animation: goofy_expand 5s infinite linear;
+}
+
+@keyframes crazy_spin {
+    100% {transform: rotate(180deg);}
+}
+.crazy_spin {
+    animation: crazy_spin 5s infinite linear;
+}
+
+.BOING {
+    position: 100px;
+}
+
+/* paragrafo */
+p {
+    text-align: center;
+    color: green;
+}
+
+/* classe vermelho */
+.vermelho {
+    color: red;
+}
+
+/* id paragrafo_legal */
+#paragrafo_legal {
+    color: purple;
+}
