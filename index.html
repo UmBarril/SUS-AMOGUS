@@ -3,26 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memes</title>
     <link rel="stylesheet" href="estilo.css"/>
 </head>
 <body>
+    <h1 style="font-size: 20pt; color: green; font-family: 'Courier New', Courier, monospace;"><b>Amount of AMOGUS: </b><a id="amountOfAmogus" style="color: red">0</a></h1>
     <div class="crazy_spin">
         <div class="goofy_expand">
             <p class="rainbow">AMONG US</p>
         </div>
     </div>
-    <div class="crazy_spin">
-        <div class="goofy_expand">
-            <img src="among-us-gif-3.gif" height="100px" width="100px">
-            <img src="among-us-gif-3.gif" height="100px" width="100px">
-            <img src="among-us-gif-3.gif" height="100px" width="100px">
-            <img src="among-us-gif-3.gif" height="100px" width="100px">
-            <img src="among-us-gif-3.gif" height="100px" width="100px">
-            <img src="among-us-gif-3.gif" height="100px" width="100px">
-            <img src="among-us-gif-3.gif" height="100px" width="100px">
-        </div>
+    <div id="amogus" class="selectDisable">
+        <img class="mini_crazy_spin" src="among-us-gif-3.gif" height="100px" width="100px">
     </div>
     <br>
     <p id="paragrafo_legal" class="vermelho">MEMES</p>
@@ -36,5 +28,14 @@
     <p>MEMES</p>
     <p>MEMES</p>
     <p>MEMES</p>
+    <script>
+        let amogus = document.getElementById("amogus");
+        amogus.onclick = function(e) {
+            amogus.innerHTML += amogus.innerHTML;
+            var amountOfAmogus = document.querySelectorAll(".mini_crazy_spin").length;
+            console.log("AMOUNT OF AMOGUS: " + amountOfAmogus);
+            document.querySelector("#amountOfAmogus").innerHTML = amountOfAmogus;
+        }; 
+    </script>
 </body>
 </html>
